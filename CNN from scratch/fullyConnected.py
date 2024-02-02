@@ -6,10 +6,9 @@ class ANN:
     def __init__(self, input_len, nodes):
         self.param = {}
         self.dparam = {}
-        # self.param["weight"] = np.random.randn(input_len, nodes) / input_len
-        # self.param["biases"] = np.zeros(nodes)
-        self.param["weight"]=np.load(r"weight.npy")
-        self.param["biases"]=np.load(r"biases.npy")
+        self.param["weight"] = np.random.randn(input_len, nodes) / input_len
+        self.param["biases"] = np.zeros(nodes)
+
     def forward(self, input):
 
         self.last_input_shape = input.shape
