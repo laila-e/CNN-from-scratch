@@ -19,7 +19,6 @@ The Main file, or main.py, is the entry point for running and executing the CNN.
 ### Author
 Laila El Ouedeghyry
 ### References
-<div>
-  [Convolutional Neural Network From Scratch](https://medium.com/latinxinai/convolutional-neural-network-from-scratch-6b1c856e1c07)
-  [Convolutional Neural Network](https://youtube.com/playlist?list=PLuhqtP7jdD8CD6rOWy20INGM44kULvrHu&si=NYxFK2h_NAMNoaOG)
-</div>
+[Convolutional Neural Network From Scratch](https://medium.com/latinxinai/convolutional-neural-network-from-scratch-6b1c856e1c07)<br>
+[Convolutional Neural Network](https://youtube.com/playlist?list=PLuhqtP7jdD8CD6rOWy20INGM44kULvrHu&si=NYxFK2h_NAMNoaOG)
+
