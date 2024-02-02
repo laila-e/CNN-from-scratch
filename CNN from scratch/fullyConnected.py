@@ -8,8 +8,8 @@ class ANN:
         self.dparam = {}
         # self.param["weight"] = np.random.randn(input_len, nodes) / input_len
         # self.param["biases"] = np.zeros(nodes)
-        self.param["weight"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\weight.npy")
-        self.param["biases"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\biases.npy")
+        self.param["weight"]=np.load(r"weight.npy")
+        self.param["biases"]=np.load(r"biases.npy")
     def forward(self, input):
 
         self.last_input_shape = input.shape
