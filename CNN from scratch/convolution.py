@@ -14,18 +14,14 @@ class Convolution:
 
     def initialisation(self):
         for i, v in enumerate(self.layer):
-            self.filters["layer1"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\filter1.npy")
-            self.filters["layer2"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\filter2.npy")
-            self.biases["layer1"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\baises1_conv.npy")
-            self.biases["layer2"]=np.load(r"D:\utilisateurs\DELL\Desktop\leila\Master\S1\Mr jamal\lolo.py\baises2_conv.npy")
-            # if i == 0:
-            #     self.filters["layer"+str(i+1)] = np.random.rand(self.num_filter["layer"+str(i+1)], self.size_filter["layer"+str(
-            #         i+1)], self.size_filter["layer"+str(i+1)])/self.size_filter["layer"+str(i+1)]*self.size_filter["layer"+str(i+1)]
-            # else:
-            #     self.filters["layer"+str(i+1)] = np.random.rand(self.num_filter["layer"+str(i+1)], self.num_filter["layer"+str(i)], self.size_filter["layer"+str(
-            #         i+1)], self.size_filter["layer"+str(i+1)])/self.size_filter["layer"+str(i+1)]*self.size_filter["layer"+str(i+1)]
-            # self.biases["layer" +
-            #             str(i+1)] = np.zeros((self.num_filter["layer"+str(i+1)],))
+            if i == 0:
+                 self.filters["layer"+str(i+1)] = np.random.rand(self.num_filter["layer"+str(i+1)], self.size_filter["layer"+str(
+                     i+1)], self.size_filter["layer"+str(i+1)])/self.size_filter["layer"+str(i+1)]*self.size_filter["layer"+str(i+1)]
+            else:
+                 self.filters["layer"+str(i+1)] = np.random.rand(self.num_filter["layer"+str(i+1)], self.num_filter["layer"+str(i)], self.size_filter["layer"+str(
+                     i+1)], self.size_filter["layer"+str(i+1)])/self.size_filter["layer"+str(i+1)]*self.size_filter["layer"+str(i+1)]
+             self.biases["layer" +
+                         str(i+1)] = np.zeros((self.num_filter["layer"+str(i+1)],))
 
     def iterate_regions(self, image, size_filter):
         h, w = image.shape
